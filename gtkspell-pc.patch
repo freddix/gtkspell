@@ -1,0 +1,11 @@
+diff -aurN gtkspell-2.0.16.orig/gtkspell-2.0.pc.in gtkspell-2.0.16/gtkspell-2.0.pc.in
+--- gtkspell-2.0.16.orig/gtkspell-2.0.pc.in	2013-08-19 10:54:30.089842060 +0200
++++ gtkspell-2.0.16/gtkspell-2.0.pc.in	2013-08-19 11:15:43.895581633 +0200
+@@ -7,6 +7,7 @@
+ Description: GTK spelling library
+ Version: @VERSION@
+ Requires: @GTKSPELL_PACKAGES@
++Requires.private: enchant
+ Libs: -L${libdir} -lgtkspell
+ Libs.private: @SPELLER_LIB@
+ Cflags: -I${includedir}/gtkspell-2.0
